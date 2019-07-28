@@ -8,31 +8,47 @@
         <title> Planszofix </title>
         <meta name="description" content="boardgames, gry planszowe, kosci, dice">
         <meta name="author" content="Inzynier Nierobstwa">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name = "viewport" content = "width = device-width, initial-scale=1">
 
         <link rel="stylesheet" href='style.css'>
     </head>
     <body>
-        <header class = 'header'>
-            <h1 class = 'header__primary'>
-                Planszofix - Twoja baza planszowek
-            </h1>
-            <h2 class = 'header__secondary'>
-                Łatwa w obsłudze baza planszówek, w które grasz, chcesz kupić, chcesz sprzedać
-            </h2>
-        </header>
-        <nav class = 'navigation'>
-            <ul class = 'navigation__components'>
-                <li> Posiadane </li>
-                <li> Kupię </li>
-                <li> Sprzedam </li>
+        <nav class='navigation'>
+            <ul class='navigation__components'>
                 <li> Lista gier </li>
+                <li> Rozegrane </li>
                 <li> O mnie </li>
             </ul>
         </nav>
+        <header class = 'header'>
+            <h1 class = 'header header--primary'>
+                Planszofix - Twoja baza planszowek
+            </h1>
+            <h2 class = 'header header--secondary'>
+                baza planszówek, w które grasz, chcesz kupić, chcesz sprzedać
+            </h2>
+            <p>Znasz to? Twoja kolekcja się rozrasta, niektóre gry były kompletnym niewypałem
+            a nowe gry tak bardzo chcą znaleźć się w Twojej kolekcji?  
+            </p>
+            <p>
+                A co jeśli mógłbyś dodać swoje gry w jedno miejsce, posegregować je tak jak chcesz?
+                Bez trudu odnaleziona gra, w którą aktualnie chcesz zagrać to cel tej strony.
+            </p>
+            <img class='header__image' src='https://cdn3.iconfinder.com/data/icons/fun-1/100/fun-go-08-512.png' alt = 'dice' width = '250vw' height = 'auto'>
+            <form class = 'formula'>
+                <button type = 'button' name = 'buttonGetStarrted' class = 'formula__button formula__button--start'>Zaczynaj</button>
+            </form>
+        </header>
         <section class = 'container'>
             <div class = 'container container--own'>
-
+                <p> Lista planszówek </p>
+                <ul class = 'container__list container__list--addRemove'>
+                    <!-- tu beda dodawane/usuwane gry -->
+                </ul>
+                <form class = 'formula formula--addRemove'>
+                    <input type = 'text' name = 'addRemoveGame' class = 'formula__input formula__input--addRemove'>
+                    <button type = 'button' name = 'plusBtn' class = 'formula__button formula__button--plus'> + </button>
+                </form>
             </div>
             <div class = 'container container--toBuy'>
 
@@ -44,7 +60,12 @@
 
             </div>
             <div class = 'container container--aboutMe'>
-                
+                <h3> O mnie</h3>
+                <p>Hej nazywam się Kamila. Z wykształcenia jestem inżynierem energetykiem,
+                pracuje jako konstruktor w branży automotive. Chcę pokierować swoją karierę
+                na tory programistyczne - jeżeli spodobała Ci się mój projekt i to jakie 
+                umiejętności posiadam, skontaktuj się poprzez formularz kontaktowy.
+                </p>
             </div>
         </section>
         <footer>

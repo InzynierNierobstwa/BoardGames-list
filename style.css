@@ -1,5 +1,46 @@
-body{
+*{
     margin: 0;
     padding: 0;
-    font-size: 24px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
 }
+
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+    margin: 2vw 5vw;
+}
+
+.navigation__components li{
+    list-style: none;
+    display: inline-block;
+}
+
+.header--primary{
+    font-size: 1.5rem;
+    margin: 2vw 5vw;
+}
+
+.header--secondary{
+    font-size: 1.2rem;
+    margin: 2vw 5vw;
+}
+
+.header p{
+    font-size: 1rem;
+    margin: 2vw 5vw;
+    text-align: justify;
+}
+
+.header__image{
+    display: block;
+    margin: 0 auto;
+}
+
+.formula__button--start{
+    font-size: 1.2rem;
+    display: block;
+    margin: 5vw auto;
+}
+
