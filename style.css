@@ -41,6 +41,18 @@
 .formula__button--start{
     font-size: 1.2rem;
     display: block;
-    margin: 5vw auto;
+    margin: 2vw auto;
+}
+
+.container{
+    margin: 2vw 2vw;
+}
+
+.container--own{
+    margin: 0 2vw;
+}
+
+.footer{
+    margin: 2vw 4vw;
 }
 
