@@ -8,19 +8,13 @@ document.addEventListener('DOMContentLoaded', function(){
     gameForm.addEventListener('submit', function(e){
         e.preventDefault();
         const textArea = this.querySelector('.formula__input--addRemove');
-        if (textArea.value !== ''){
+        if (textArea.value !== '' && gameTable.indexOf(textArea.value) === -1){
             addGame(textArea.value);
-            addGameTable(textArea.value);
+            gameTable.push(textArea.value);
             textArea.value = '';
+            console.log(gameTable);// sprawdza czy nie jest wpisywany pusty element albo już znajdujący się w tabeli
         }
     })
-
-    function addGameTable(text){
-        gameTable.push(text);
-        console.log(gameTable);
-    }
-
-    //dodawać gry do tablicy i usuwać gry z tablicy, sprawdzać czy gra jest już wpisana
 
     function addGame(text){
         console.log('dodano zadanie');
