@@ -57,7 +57,7 @@
 }
 
 .container__list--element{
-    height: 3.5vw;
+    margin: 1vw 0;
 }
 
 .container__list--bar{
@@ -65,6 +65,22 @@
     justify-content: space-between;
     overflow: hidden;
     align-items: center;
+    font-size: 1rem;
+}
+
+.formula--addRemove{
+    margin: 1vw 0;
+}
+
+.footer__img{
+    width: 5%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a{
+    text-decoration: none;
+    border: 0;
 }
 
 .footer{

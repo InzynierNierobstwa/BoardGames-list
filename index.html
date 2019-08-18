@@ -15,9 +15,9 @@
     <body>
         <nav class='navigation'>
             <ul class='navigation__components'>
-                <li> Lista gier </li>
-                <li> Rozegrane </li>
-                <li> O mnie </li>
+                <li><a href = '#listaGier'> Lista gier </a> </li>
+                <li> <a href = '#rozegrane'> Rozegrane </a> </li>
+                <li> <a href = '#oMnie'> O mnie </a> </li>
             </ul>
         </nav>
         <header class = 'header'>
@@ -41,7 +41,7 @@
         </header>
         <section class = 'container'>
             <div class = 'container--own'>
-                <p class = 'container__list--own'> Lista planszówek </p>
+                <p class = 'container__list--own' id = 'listaGier'> Lista gier </p>
                 <div class = 'container__list container__list--addRemove'>
                     <!-- tu beda dodawane/usuwane gry -->
                 </div>
@@ -51,7 +51,7 @@
                 </form>
             </div>
             <div class = 'container container--aboutMe'>
-                <h3> O mnie</h3>
+                <h3 id = 'oMnie'> O mnie</h3>
                 <p>Hej nazywam się Kamila. Z wykształcenia jestem inżynierem energetykiem,
                 pracuje jako konstruktor systemów hamowania w branży automotive. Z racji tego,
                 że dewiza "do not invent - just copy" jest dla mnie nie do przyjęcia, chcę 
@@ -61,7 +61,14 @@
             </div>
         </section>
         <footer class = 'footer'>
-            <p class = 'footer__p'> author: Inzynier Nierobstwa &reg; 2019</p>
+            <p class = 'footer__p'> author: Inzynier Nierobstwa &reg; 2019
+            <a href = 'https://www.linkedin.com/in/kamila-lisztwan-688886106/'>
+            <img class = 'footer__img footer__img--linkedin' loading = 'lazy' src = 'linkedin-logo.svg' alt = 'linkedin'>
+            </a>
+            <a href = 'https://github.com/InzynierNierobstwa'>
+            <img class = 'footer__img footer__img--github' loading = 'lazy' src = 'github-sign.svg' alt = 'github'>
+            </a>
+            </p>
             <!-- tu beda linki do githuba linkedina -->
         </footer>
         <script type = 'text/javascript' src = 'app.js'></script>
