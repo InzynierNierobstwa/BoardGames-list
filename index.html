@@ -50,6 +50,24 @@
                     <button type = 'submit' name = 'plusBtn' class = 'formula__button formula__button--plus'> + </button>
                 </form>
             </div>
+            <div class = 'container--played'>
+                <p class = 'container__list--played'> Lista rozegranych gier </p>
+                <div class = 'container--list container__list--addRemovePlayed'>
+                    <!-- tu beda dodawane/usuwane rozgrywki -->
+
+                </div>
+                <form class ='formula formula--addRemovePlayed'>
+                    <label for = 'newGamePlayed'>Nazwa gry:</label><br>
+                    <input type = 'text' name = 'newGamePlayed' class = 'formula__input formula__input--newGamePlayed'>
+                    <label for = 'newGamePlayedDate'> Data: </label><br>
+                    <input type = 'date' name = 'newGamePlayedDate' value = '2019-08-20' min = '2015-01-01' max = '2020-12-31'>
+                    <label for = 'newGamePlayers'> Gracze: </label><br>
+                    <input type = 'number' name = 'newGamePlayers' class = 'formula__input formula__input--newGamePlayers'>
+                    <label for = 'newGamePlayedComment'> Komentarz: </label><br>
+                    <textarea name = 'newGamePlayedComment' placeholder = 'Komentarz do gry'></textarea>
+                    <button type = 'submit' name = 'addBtn' class = 'formula__button formula__button__game'> + </button>
+                </form>
+            </div>
             <div class = 'container container--aboutMe'>
                 <h3 id = 'oMnie'> O mnie</h3>
                 <p>Hej nazywam się Kamila. Z wykształcenia jestem inżynierem energetykiem,

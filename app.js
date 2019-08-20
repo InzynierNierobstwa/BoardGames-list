@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function(){
         e.preventDefault();
         const textArea = this.querySelector('.formula__input--addRemove');
         if (textArea.value !== '' && gameTable.indexOf(textArea.value.toUpperCase()) === -1){
-            addGame(textArea.value);
+            addBoardGame(textArea.value);
             gameTable.push(textArea.value.toUpperCase());
             textArea.value = '';
             console.log(gameTable);// sprawdza czy nie jest wpisywany pusty element albo już znajdujący się w tabeli
@@ -18,8 +18,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     gameList.addEventListener('click', function(e){
         if(e.target.classList.contains('formula__button--minus')){
-            const word = e.target.parentElement.parentElement.nextElementSibling;
-            console.log(word.innerText.toUpperCase());
+            const word = e.target.parentElement.parentElement.nextElementSibling;// xD
             removeFromArray(gameTable, word.innerText.toUpperCase());
             e.target.closest('.container__list--element').remove();
             console.log(gameTable);
@@ -32,11 +31,11 @@ document.addEventListener('DOMContentLoaded', function(){
     }
     //funkcja ktora usprawnia szukanie - male/duze litery
 
-    function addGame(text){
+    function addBoardGame(text){
         console.log('dodano zadanie');
 
         const newGame = document.createElement('div');
-        newGame.classList.add('container__list--element');//element dodany
+        newGame.classList.add('container__list--element');//caly element dodany
 
         const newGameBar = document.createElement('div');
         newGameBar.classList.add('container__list--bar'); //belka
@@ -62,6 +61,18 @@ document.addEventListener('DOMContentLoaded', function(){
         newGame.appendChild(gameText);
 
         gameList.appendChild(newGame);
+    }
+
+    function addGame(text){
+        console.log('dodano rozgrywke')
+
+        const newGame = document.createElement('div');
+        newGame.classList.add('container__list--elemet');//caly element dodany
+
+        const newGameBar = document.createElement('div');
+        newGameBar.classList.add('container__list--bar')
+
+        
     }
 
 });

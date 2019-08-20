@@ -72,6 +72,10 @@
     margin: 1vw 0;
 }
 
+.container--played{
+    margin: 2vw 2vw;
+}
+
 .footer__img{
     width: 5%;
     height: auto;
