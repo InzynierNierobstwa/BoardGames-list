@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function(){
     });
 
     function removeFromArray(array, word){
-        const index = array.findIndex(word);
+        const index = array.indexOf(word);
         array.splice(index, 1);//usuwanie z tablicy do dopracowania!!!
     }
     //funkcja ktora usprawnia szukanie - male/duze litery
