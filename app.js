@@ -18,7 +18,9 @@ document.addEventListener('DOMContentLoaded', function(){
 
     gameList.addEventListener('click', function(e){
         if(e.target.classList.contains('formula__button--minus')){
-            console.log(word);
+            const word = e.target.parentElement.parentElement.nextElementSibling;
+            console.log(word.innerText.toUpperCase());
+            removeFromArray(gameTable, word.innerText.toUpperCase());
             e.target.closest('.container__list--element').remove();
             console.log(gameTable);
         }//usuwa element ze strony i z tablicy pozwalajac na ponowne wpisane go do listy
@@ -26,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     function removeFromArray(array, word){
         const index = array.indexOf(word);
-        array.splice(index, 1);//usuwanie z tablicy do dopracowania!!!
+        array.splice(index, 1);
     }
     //funkcja ktora usprawnia szukanie - male/duze litery
 
